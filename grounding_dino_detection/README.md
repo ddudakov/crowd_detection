@@ -9,23 +9,27 @@
 ```bash
 git clone https://github.com/yourusername/people-detection-groundingdino.git
 cd people-detection-groundingdino
+```
 
 2. Установите зависимости:
 ```bash
 pip install -r requirements.txt
+```
 
 3. Скачать веса для Grounding DINO:
 ```bash
 wget https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth
+```
 
 И переместить их в фолдер *weights*:
 ```bash
 mv groundingdino_swint_ogc.pth grounding_dino_detection/weights/
+```
 
 ## Использование
 ```bash
 python main.py
-
+```
 Результат будет сохранен в *output/crowd_detected.mp4*
 
 ## Особенности
